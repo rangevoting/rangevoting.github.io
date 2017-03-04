@@ -1,0 +1,115 @@
+    body {color: #5a5a5a;}
+    
+    
+    .font3d {
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    } .jtp a {
+/*     text-shadow: 0 0 1px #337ab7, 0 0 1px #337ab7; */
+    color:white;
+    }
+    .jtp {
+   /* background-color: #00000033;*/
+    font-weight:normal !important;
+    color:white;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
+    }
+    
+    
+    
+    /* MISSION SECTION
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+#mission .col-md-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+#mission h2 {
+  font-weight: normal;
+}
+#mission .col-md-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#mission {
+background-image: url('images/cubes.png');
+padding-top:30px;
+}
+
+#mission img {
+
+}
+
+
+
+
+/* tutorial section */
+
+#tutorial {
+margin-bottom: 0;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+  font-weight: normal;
+}
+
+.featurette .lead li {
+    font-size:inherit;
+    padding-bottom: 1em;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+/*@media (min-width: 992px) {
+  .featurette-heading, .featurette .col-md-5 {
+    margin-top: 120px;
+  }
+}*/
+
+
+
+
+/* INFORMATION  */
+
+a.info {
+    color:inherit;
+    border-bottom: 1px dotted #04AB0050;
+}
+
+.popover-content blockquote {
+    font-size: inherit;
+}

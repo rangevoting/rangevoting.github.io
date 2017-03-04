@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Center for Range Voting</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+    <!-- http://www.cssscript.com/pure-css-background-slideshow-ken-burns-effect/ -->
+    <link href="css/slideshow.css" rel="stylesheet">
+    
+    <link href="css/index.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top navbar-inverse" style="margin-bottom:0">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Center for Range Voting</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Missions <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Range Voting</a></li>
+                <li><a href="#">Anti-Gerrymandering</a></li>
+                <li><a href="#">Election Reform</a></li>
+                <li><a href="#">Use It Yourself</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Advocacy</li>
+                <li><a href="#">Ballot Initiative (USA)</a></li>
+              </ul>
+            </li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Take Action <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Sign Endorsement</a></li>
+                <li><a href="#">Join Us</a></li>
+                <li><a href="#">Donate</a></li>
+                <li><a href="#">Volunteer</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Ways to Help</li>
+                <li><a href="#">Improve Pages</a></li>
+                <li><a href="#">Spread the Word</a></li>
+                <li><a href="#">Translate Pages</a></li>
+                <li><a href="#">Recruit Endorsers</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Classified Ads</a></li>
+              </ul>
+            </li>
+            
+            <li><a href="#news">News</a></li>
+            
+            <li><a href="#puzzles">Puzzles</a></li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">The CRV</li>
+                <li><a href="#">About the Center</a></li>
+                <li><a href="#">Contact CRV</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">People</li>
+                <li><a href="#">Warren Smith <span class="text-muted">cofounder</span></a></li>
+                <li><a href="#">Jan Kok <span class="text-muted">cofounder</span></a></li>
+                <li><a href="#">Lucas VB <span class="text-muted">dev/designer</span></a></li>
+                <li><a href="#">Connor D <span class="text-muted">dev/designer</span></a></li>
+                <li><a href="#">Kash C <span class="text-muted">contributor</span></a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Publicity</li>
+                <li><a href="#">Press Tools</a></li>
+                <li><a href="#">Copyright</a></li>
+              </ul>
+            </li>
+            
+
+          </ul>
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li><button type="button" class="btn btn-success navbar-btn">Endorse! 
+            <span class="badge">435</span></button></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">English <span class="sr-only">(current)</span><span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">English</a></li>
+                <li><a href="#">Spanish</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Machine Translated</li>
+                <li><a href="#">Spanish</a></li>
+                <li><a href="#">French</a></li>
+                <li><a href="#">German</a></li>
+                <li><a href="#">Spanish</a></li>
+                <li><a href="#">Farsi</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Help translate</a></li>
+              </ul>
+            </li>
+            
+            
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background: none;overflow:hidden;position:relative; margin-bottom:0;">
+<!--        <div style="height:0;z-index:-1;margin-top:-248px;margin-bottom:200px;">
+            <video loop preload="auto" autoplay muted class="video-header" style="width:100%;">
+            <source src="https://s3.amazonaws.com/voteup-images/banner.mp4" type="video/mp4">
+            </video>
+        </div>-->
+        <div class="slideshow" style="margin-top:-48px;background:#222;z-index:-1;height:100%;">
+      <div class="slideshow-image" style="background-image: url('http://i.huffpost.com/gen/2323440/images/o-VOTING-facebook.jpg')"></div>
+      <div class="slideshow-image" style="background-image: url('http://a.abcnews.com/images/Politics/GTY-early-voting-1-jt-161029_12x5_1600.jpg')"></div>
+      <div class="slideshow-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/HUJI_Election_Debate.jpg/1280px-HUJI_Election_Debate.jpg')"></div>
+      <div class="slideshow-image" style="background-image: url('https://www.thenation.com/wp-content/uploads/2016/11/Arizona_voting_AP_img.jpg')"></div>
+      </div>
+      
+      <div class="container">
+        
+        <h1 class="font3d" style="color:white;">Get <i>real</i> democracy.</h1>
+        <p class="jtp">For centuries, the US and other countries have used one of the worst possible election systems. We advocate long-overdue election reform via Range Voting and other common-sense, mathematically proven voting policies.
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more below &raquo;</a>
+        <a class="btn btn-lg" href="#" role="button">or Endorse CRV now! &raquo;</a>
+        </p>
+      </div>
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div id="mission">
+    <div class="container">
+    
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+        <img class="img-rounded" src="images/teach-icon.svg" alt="teaching with graph" width="140" height="140">
+          <h2>To educate the public</h2>
+          <p>About the disadvantages of other voting methods such as the embarrasingly poor Plurality System used in the U.S. and other countries.</p>
+          <p><a class="btn btn-default" href="#wiki" role="button">See our extensive reference &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+        <img class="img-rounded" src="images/protest-icon.svg" alt="protestors" width="140" height="140">
+          <h2>To lobby for adoption</h2>
+          <p>of Range Voting, for every single-winner election anywhere in the world, and abolition of gerrymandering through fair redistricting methods.</p>
+          <p><a class="btn btn-default" href="#" role="button">See Ballot Initiative &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+        <img class="img-rounded" src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTAwIDEwMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGQ9Ik03NC44LDExLjZjLTAuOSwwLTQ4LjcsMC00OS42LDBjLTEsMC0yLjgsMC40LTMuMywxQzIxLjQsMTMuMyw1LjMsMzQuNSw1LjMsMzQuNWg4OS4zYzAsMC0xNi4zLTIxLjQtMTYuNi0yMS45ICAgUzc2LjEsMTEuNiw3NC44LDExLjZ6IE03MS4yLDI2LjJIMjguOGMtMiwwLTMuNS0xLjQtMi42LTMuNmMwLjktMi4yLDIuNi00LjEsNC42LTQuMWgzOC40YzIsMCw0LjEsMS45LDQuOCw0LjIgICBDNzQuNiwyNSw3My4zLDI2LjIsNzEuMiwyNi4yeiIvPjxwYXRoIGQ9Ik01LDQwYzAsMCwwLDQwLDAsNDNjMCwzLDIuMiw1LDUuMyw1YzMuMSwwLDc2LjIsMCw3OS4yLDBzNS41LTIuMiw1LjUtNWMwLTIuNywwLTQzLDAtNDNINXogTTQ4LjQsNzQuMyAgIGMtMS4xLDEuMi0yLjMsMi40LTIuOSwyLjljLTAuMSwwLjEtMC4yLDAuMi0wLjIsMC4ybDAsMGMtMC4xLDAtMC4xLDAtMC4xLDBjLTAuOCwwLTExLjktMTEuNS0xMS45LTEyLjFzNS40LTUuOCw2LjItNS44ICAgYzAuNCwwLDMuMiwyLjgsNS45LDUuN2M2LjItNi41LDE1LjMtMTUuOCwxNS44LTE1LjhjMC44LDAsNS45LDUuMyw1LjksNkM2Ni45LDU2LjEsNTQuNCw2OC40LDQ4LjQsNzQuM3oiLz48L2c+PC9zdmc+" alt="ballot box" width="140" height="140">
+          <h2>To assist in using Range</h2>
+          <p>in elections, for anyone looking to do so, whether it's for public office, student elections, or even a group vote among friends.</p>
+          <p><a class="btn btn-default" href="#app" role="button">Start online contest &raquo;</a>
+          <a class="btn btn-default" href="#app" role="button">Smartphone App &raquo;</a></p>
+        </div>
+      </div>
+    </div>  <!-- /container -->
+</div>
+
+
+
+
+
+
+
+  <nav class="navbar navbar-inverse" id="tutorial"><div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Voting Methods 101</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">0-dimensional <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">1-dimensional</a></li>
+        <li><a href="#">2-dimensional</a></li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search voting wiki">
+        </div>
+        <button type="submit" class="btn btn-default">Search</button>
+      </form>
+    </div><!-- /.navbar-collapse --></div><!-- /.container -->
+    </nav>
+  
+
+  
+
+
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background: url('images/escheresque_ste.png'); color:white;">
+      <div class="container">
+        <h1>What's wrong with plurality?</h1>
+
+      </div>
+    </div>
+
+
+
+
+
+  <div class="container">
+  <!-- START THE FEATURETTES -->
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">If you were to design the worst way to vote...</h2>
+          <p class="lead">
+          <ul class="list-unstyled lead">
+          <li>
+          <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+          You'd force voters to say the <i>least</i> possible amount – name just one candidate, 
+and say nothing about how much you like
+or dislike any of the others.</li>
+
+<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+You'd make it <i>reward</i> voters for <a title="favorite betrayal" class="info article-link"><i>not</i> voting for whom they really want.</a></li>
+
+<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+Make it operate, over time, in such a way as to diminish your number of
+choices to the <i>minimum</i>  – <a class="info" title="or 1, which is the same as no choice.">only 2</a>.</li>
+
+<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+Make it easy for fraudsters to <a title="overvoting" class="info">invalidate ballots</a>.</li>
+</ul>
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block img-rounded" src="http://imamsonline.com/blog/wp-content/uploads/2015/05/voting.jpg" style="width:500px;height:500px;" alt="Generic ballot">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">But wait! That's our system now!</h2>
+          <p class="lead">Yup! Also known as "<a class="info" title="A reference to horse racing, FPTP is called such because the winner shuts out the other candidates as soon as he gets a plurality of votes (the others are then unable to possibly win), even before all the ballots are counted.">first-past-the-post</a>", <a class="info" title="The winner in these contests gets a simple <i>plurality</i> to win, meaning more than the others. (No majority required.)" href="plurality"><i>plurality</i></a> is unfortunately the most common voting system for single-winner races. Your "vote" is the name of a single candidate, and the most-named candidate wins.
+          
+          Plurality is simple. Plurality is easy to count. Plurality is also the only election method most people have ever known. There is, however, a <a title="skip to section on Range Voting" href="#range">better way</a>! But first, let's take a look at some of Plurality's wonderful "<a class="info" title="pathologies">features</a>", shall we?
+          </p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+        
+        <div class="thumbnail">
+      <img class="featurette-image img-responsive center-block img-rounded" style="" alt="Cavemen" src="http://i.imgur.com/pFBQyLv.jpg">
+      <div class="caption">
+        <h3>Caveman voting</h3>
+        <p>Since plurality does not even require literacy, it is often called Caveman voting. <span class="text-muted">For example, everyone gets a stone and places it in a pile near their preferred candidate.</span></p>
+      </div>
+    </div>
+        
+        </div>
+      </div>
+      
+      
+      
+            <hr class="featurette-divider">
+      
+      
+    <div class="row pathologies">
+        <div class="col-md-3">
+          <h2>Spoilers!</h2>
+          <p>(TODO) A "spoiler" is a candidate S, such that, if you vote for S, that could cause both S and your second-favorite candidate Q both to lose, whereas if you had voted for Q (e.g. if S were to drop out of the race, or if you just voted dishonestly to strategically pretend Q was your true favorite), then Q would have won. Spoilers can exist in Plurality, IRV, Borda, and Condorcet voting but do not exist in Approval and Range voting. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+          <h2>Lesser of two evils</h2>
+          <p>TODO Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-3">
+          <h2>Candidate Cloning</h2>
+          <p>If a second candidate A, almost identical to B in the eyes of all voters, enters the race (or withdraws) that should <a class="info" title="(aside from replacement by a clone)">neither hurt nor help</a> B's chances of being elected. If this seems like common sense to you, you should know that most voting methods fail it except range. It makes for <a data-toggle="popover" title="Story #1"  data-content="<blockquote>John Dendahl, chairman of the New Mexico Republican Party, quietly offered 'more than $100,000' to the Green Party if they would run candidates in NM's first and second Congressional Districts. The Greens were relatively strong in New Mexico and had already been spoilers in local races. The difference was that the Republicans were now willing to pay cash for services that had previously been free.
+<footer>W.Poundstone: <cite>Gaming The Vote, Hill & Wang 2008, p.110</cite>.</footer></blockquote> (This was in July 2002. Later, the Greens reported that the offer was $250,000. Dendahl told CNN that he got the money and instructions from 'somebody in Washington' but refused to say who.) ">some</a> <a data-toggle="popover" title="Story #2"  data-content="<blockquote>In the June 2006 special election for the Congressman from California's 15th district, Republican Brian Bilbray was a foaming-at-the-mouth anti-immigration hawk who supported building a fence clear from the Pacific Ocean to the Gulf of Mexico... in one of his ads he was shown driving a bulldozer, keeping 'Tijuana sewage' off California's beaches. William Griffith, a Republican running independent using $2000 of his own money, claimed to be even more anti-immigrant than Bilbray. How that was possible was unclear.
+Then something odd happened. Phone calls started urging voters to vote for Griffith. Radio ads too. Griffith didn't know who was behind them. Both later turned out to have been funded by Democratic candidate Francine Busby. <footer>W.Poundstone: <cite>Gaming The Vote, p.120</cite>, paraphrased.</footer></blockquote> ">great</a> <a data-toggle="popover" title="Story #3" data-content="<blockquote>Despite having $21 million in campaign cash, Pennsylvania's Republican uber-hawk Senator Rick Santorum had a tough race for re-election in 2006 against Democrat Bob Casey. A May 2006 SurveyUSA poll had found him the least popular US senator. (Santorum claimed in June 2006 to have seen secret documents showing the USA had finally located Saddam Hussein's 'weapons of mass destruction.' But neither Santorum, nor anybody else, ever revealed those locations.)
+But the candidate having a really tough time was the Green Party's Carl Romanelli. He had almost no money and needed 67070 signatures to get on ballot. There were only 20000 Green party members in Pennsylvania. Santorum and Romanelli had diametrically-opposite stances on Iraq, abortion, and gun control.
+Suddenly, Romanelli's funding increased by a factor of 2000. All of it came from (what the press identified as) GOP/conservative donors (some crudely disguised) and was funneled to a signature-collecting company.
+<footer>W.Poundstone: <cite>Gaming The Vote, p.124</cite>, paraphrased.</footer> </blockquote>(Poundstone estimates that Santorum, by donating money to Romanelli, effectively got about 15 times more votes-versus-Casey per dollar than if he'd spent it directly on his own campaign.) ">horror</a> stories, though!</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+          <h2>Unexpressive</h2>
+          <p>Plurality has the frustrating disadvantage that there is no way for a voter to express any of his opinions about any of the other candidates, and it often is strategically best for a voter to dishonestly vote for somebody who is not his true favorite – the system encourages lying.
+
+You then get <a class="info" title="More amusing but equivalent wording: 'artificial monopoly for the unpopular Republocrat party, with its ridiculous good-cop/bad-cop scam.'">a great choice between being a liar and being a fool</a>. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+    </div>
+    <div class="row pathologies">
+        <div class="col-md-3">
+          <h2>No majority required</h2>
+          <p>With plurality voting, you can win without a majority – both Clinton and G. W. Bush 
+won even though the majority voted against them. 
+That means it's <a href="LoseAll.html">possible</a>
+for <b>most</b> of the voters to get the candidate they 
+like <b>least</b>!<sup><a class="info" href="PuzzlePage.html#p24" title="Probability estimate for how often that occurs">(How often?)</a></sup>
+Plurality can in fact easily elect the candidate as "best" whom it would also decide is "worst,"
+and its notions of "best" and "worst" can <a href="PlurBadRemove.html">reverse</a>
+almost <a class="info" title="except that it <i>isn't</i> random, it is predictable, which is even worse
+because that means these flaws can be manipulated.">randomly</a>.
+</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+          <h2>Two-party domination</h2>
+          <p>Plurality <a class="info" title="Duverger's Law is the observation that these problems of plurality result in self-reinforcing
+two-party domination" href="Duverger.html">leads to permanent two-party domination</a>.
+Indeed, in the USA, plurality plus <a title="The fact that officials get to pick their own voting districts means they can strategically distort the outcome in their favor, thereby keeping them in office. This is possible by drawing districts that include known bodies of voters and exclude others, often resulting in an obviously mangled shape." href="GerryExamples.html">gerrymandering</a>
+plus other effects has led to 
+<a href="OneParty.html"><i>one</i></a>-party
+<a href="Strangle.html">domination</a>!
+Once that happens, the remaining
+two parties tend to <a title="because  it is strategically desirable for each to 'grab the central ground'." class="info">become similar</a> ('tweedledum and tweedledee').
+
+That leads to even-further-<a title=" (beyond the reduction we already had 
+from having only 2 parties)" class="info">reduced voter choice</a> and <a title="However, the long periods of boredom are interspersed with exciting periods of randomly directed and sometimes dangerous extremism, whenever one of the parties suffers
+a vote split with a temporarily rising popular third party, causing the less-popular
+and more extreme main-party competitor to be elected." class="info">long periods of boredom</a>.
+
+</p></p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+          <h2>Vote-Splitting</h2>
+          <p> In plurality voting, introducing an extra candidate who is enough like another (see Candidate Cloning), can paradoxically cause <i>both to lose</i> (because the vote gets split among the clones) – even if the voters really like the point of view they both represent! The very popularity of a view... can cause its defeat!
+
+Is that "democracy"? or <i>a joke</i>? </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+          <h2>Overvoting</h2>
+          <p>TODO Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Plurality is so bad...</h2>
+          <p class="lead">...that, according to <a href="BayRegDum.html">computer simulations</a>,
+replacing it with <a href="RangeVoting.html">range voting</a> 
+would improve society by a comparable or
+greater amount than <i>the entire invention of democracy in the first place</i>.
+</p>
+        </div>
+        <div class="col-md-5">
+        <img class="" src="images/book.png" style="max-height:200px;margin-left: 20%;" alt="Gaming the Vote">
+          <blockquote class="text-muted">
+  <p>There have been 45 presidential elections since 1828. In at least five, the race went to the second-most-popular candidate because of a spoiler. That's an <a href="FunnyElections.html" class="info" title="Actually, if you look at a larger (worldwide, not merely USA) dataset, then it appears 11 percent is an underestimate. Click for more">11 percent</a> rate of catastrophic failure. Were the plurality vote a car or an airliner, it would be recognized for what it is – <b>a defective consumer product</b>, unsafe at any speed. 
+  </p>
+  <footer>William Poundstone in <cite class="info" title="Gaming The Vote, Hill & Wang 2008 (page 91)">Gaming The Vote</cite></footer>
+</blockquote>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+  
+</div>
+
+
+
+
+      
+      
+      
+      
+    <div class="container"> 
+      <hr>
+      
+      <footer>
+        <p>&copy; 2017 Center for Range Voting <span class="text-muted">CC-BY-SA</span></p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    
+    <script><!-- Enable all tooltips -->
+    $(function () {
+        $('.info').tooltip(
+        {placement: 'auto bottom',
+        delay: { "show": 400, "hide": 300 },
+        html: true }
+        );
+        $('[data-toggle="popover"]').popover({
+        trigger: 'click hover focus',
+        html: true,
+        placement: 'auto left'
+        });
+    })
+    
+</script>
+  </body>
+</html>
