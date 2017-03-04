@@ -33,8 +33,47 @@
 
   <body>
 
-    <!-- Static navbar -->
-    <nav class="navbar navbar-default navbar-static-top navbar-inverse" style="margin-bottom:0">
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background: none;overflow:hidden; height:100vh;z-index:-1;margin:0">
+<!--        <div style="height:0;z-index:-1;margin-top:-248px;margin-bottom:200px;">
+            <video loop preload="auto" autoplay muted class="video-header" style="width:100%;">
+            <source src="https://s3.amazonaws.com/voteup-images/banner.mp4" type="video/mp4">
+            </video>
+        </div>-->
+        <div class="slideshow" style="background:#222;height:100%;position:fixed;top:0;z-index:-1;">
+      <div class="slideshow-image" style="background-image: url('http://i.huffpost.com/gen/2323440/images/o-VOTING-facebook.jpg')"></div>
+      <div class="slideshow-image" style="background-image: url('http://a.abcnews.com/images/Politics/GTY-early-voting-1-jt-161029_12x5_1600.jpg')"></div>
+      <div class="slideshow-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/HUJI_Election_Debate.jpg/1280px-HUJI_Election_Debate.jpg')"></div>
+      <div class="slideshow-image" style="background-image: url('https://www.thenation.com/wp-content/uploads/2016/11/Arizona_voting_AP_img.jpg')"></div>
+      </div>
+      
+      <div class="container" style="z-index:-1;">
+        
+        <h1 class="font3d" style="color:white;text-align:center;margin-top:20%;width:100%;">Get <i>real</i> democracy.</h1>
+            <div class="row" style="position:absolute;bottom:0;overflow:hidden;width:inherit">
+                <div class="col-xs-6" style="padding:auto">
+                <p class="jtp">With a little math, and a little common sense, we can fix our democracy.
+        <p><a class="btn btn-primary btn-lg" href="#mainnav" role="button">Learn more below &raquo;</a>
+        <a class="btn btn-lg" href="#" role="button">or Endorse CRV now! &raquo;</a>
+        </p>
+                </div>
+                <div class="col-xs-6">
+                    <canvas id="bayesianRegretAnalysis" width="" height="200" style="background-color:#FFFFFF44;border-radius:5px;"></canvas>
+
+<!--                     <img src="images/bayesian.png" style=""/> -->
+                </div>
+            </div>
+
+      </div>
+    </div>
+
+    
+    
+
+        <!-- Static navbar -->
+    <nav id="mainnav" class="navbar navbar-default  navbar-inverse" style="position:sticky;top:0;margin-bottom:0;z-index:5">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -132,31 +171,6 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron" style="background: none;overflow:hidden;position:relative; margin-bottom:0;">
-<!--        <div style="height:0;z-index:-1;margin-top:-248px;margin-bottom:200px;">
-            <video loop preload="auto" autoplay muted class="video-header" style="width:100%;">
-            <source src="https://s3.amazonaws.com/voteup-images/banner.mp4" type="video/mp4">
-            </video>
-        </div>-->
-        <div class="slideshow" style="margin-top:-48px;background:#222;z-index:-1;height:100%;">
-      <div class="slideshow-image" style="background-image: url('http://i.huffpost.com/gen/2323440/images/o-VOTING-facebook.jpg')"></div>
-      <div class="slideshow-image" style="background-image: url('http://a.abcnews.com/images/Politics/GTY-early-voting-1-jt-161029_12x5_1600.jpg')"></div>
-      <div class="slideshow-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/HUJI_Election_Debate.jpg/1280px-HUJI_Election_Debate.jpg')"></div>
-      <div class="slideshow-image" style="background-image: url('https://www.thenation.com/wp-content/uploads/2016/11/Arizona_voting_AP_img.jpg')"></div>
-      </div>
-      
-      <div class="container">
-        
-        <h1 class="font3d" style="color:white;">Get <i>real</i> democracy.</h1>
-        <p class="jtp">For centuries, the US and other countries have used one of the worst possible election systems. We advocate long-overdue election reform via Range Voting and other common-sense, mathematically proven voting policies.
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more below &raquo;</a>
-        <a class="btn btn-lg" href="#" role="button">or Endorse CRV now! &raquo;</a>
-        </p>
-      </div>
-    </div>
-
     
     
     
@@ -167,39 +181,6 @@
     
     
     
-    
-    
-    
-    
-    
-    
-<div id="mission">
-    <div class="container">
-    
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-        <img class="img-rounded" src="images/teach-icon.svg" alt="teaching with graph" width="140" height="140">
-          <h2>To educate the public</h2>
-          <p>About the disadvantages of other voting methods such as the embarrasingly poor Plurality System used in the U.S. and other countries.</p>
-          <p><a class="btn btn-default" href="#wiki" role="button">See our extensive reference &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-        <img class="img-rounded" src="images/protest-icon.svg" alt="protestors" width="140" height="140">
-          <h2>To lobby for adoption</h2>
-          <p>of Range Voting, for every single-winner election anywhere in the world, and abolition of gerrymandering through fair redistricting methods.</p>
-          <p><a class="btn btn-default" href="#" role="button">See Ballot Initiative &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-        <img class="img-rounded" src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTAwIDEwMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGQ9Ik03NC44LDExLjZjLTAuOSwwLTQ4LjcsMC00OS42LDBjLTEsMC0yLjgsMC40LTMuMywxQzIxLjQsMTMuMyw1LjMsMzQuNSw1LjMsMzQuNWg4OS4zYzAsMC0xNi4zLTIxLjQtMTYuNi0yMS45ICAgUzc2LjEsMTEuNiw3NC44LDExLjZ6IE03MS4yLDI2LjJIMjguOGMtMiwwLTMuNS0xLjQtMi42LTMuNmMwLjktMi4yLDIuNi00LjEsNC42LTQuMWgzOC40YzIsMCw0LjEsMS45LDQuOCw0LjIgICBDNzQuNiwyNSw3My4zLDI2LjIsNzEuMiwyNi4yeiIvPjxwYXRoIGQ9Ik01LDQwYzAsMCwwLDQwLDAsNDNjMCwzLDIuMiw1LDUuMyw1YzMuMSwwLDc2LjIsMCw3OS4yLDBzNS41LTIuMiw1LjUtNWMwLTIuNywwLTQzLDAtNDNINXogTTQ4LjQsNzQuMyAgIGMtMS4xLDEuMi0yLjMsMi40LTIuOSwyLjljLTAuMSwwLjEtMC4yLDAuMi0wLjIsMC4ybDAsMGMtMC4xLDAtMC4xLDAtMC4xLDBjLTAuOCwwLTExLjktMTEuNS0xMS45LTEyLjFzNS40LTUuOCw2LjItNS44ICAgYzAuNCwwLDMuMiwyLjgsNS45LDUuN2M2LjItNi41LDE1LjMtMTUuOCwxNS44LTE1LjhjMC44LDAsNS45LDUuMyw1LjksNkM2Ni45LDU2LjEsNTQuNCw2OC40LDQ4LjQsNzQuM3oiLz48L2c+PC9zdmc+" alt="ballot box" width="140" height="140">
-          <h2>To assist in using Range</h2>
-          <p>in elections, for anyone looking to do so, whether it's for public office, student elections, or even a group vote among friends.</p>
-          <p><a class="btn btn-default" href="#app" role="button">Start online contest &raquo;</a>
-          <a class="btn btn-default" href="#app" role="button">Smartphone App &raquo;</a></p>
-        </div>
-      </div>
-    </div>  <!-- /container -->
-</div>
 
 
 
@@ -207,8 +188,9 @@
 
 
 
-  <nav class="navbar navbar-inverse" id="tutorial"><div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
+
+<!--  <nav class="navbar navbar-inverse" id="tutorial"><div class="container">
+    <!-- Brand and toggle get grouped for better mobile display --
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -219,7 +201,7 @@
       <a class="navbar-brand" href="#">Voting Methods 101</a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Collect the nav links, forms, and other content for toggling --
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">0-dimensional <span class="sr-only">(current)</span></a></li>
@@ -232,12 +214,12 @@
         </div>
         <button type="submit" class="btn btn-default">Search</button>
       </form>
-    </div><!-- /.navbar-collapse --></div><!-- /.container -->
-    </nav>
+    </div><!-- /.navbar-collapse --</div><!-- /.container --
+    </nav>-->
   
 
   
-
+<div id="page" style="background:white">
 
 
 
@@ -280,7 +262,7 @@ Make it easy for fraudsters to <a title="overvoting" class="info">invalidate bal
           </p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block img-rounded" src="http://imamsonline.com/blog/wp-content/uploads/2015/05/voting.jpg" style="width:500px;height:500px;" alt="Generic ballot">
+          <img class="featurette-image img-responsive center-block img-rounded" src="http://imamsonline.com/blog/wp-content/uploads/2015/05/voting.jpg" style="width:500px;height:500px" alt="Generic ballot">
         </div>
       </div>
 
@@ -425,7 +407,33 @@ greater amount than <i>the entire invention of democracy in the first place</i>.
 </div>
 
 
-
+<div id="mission">
+    <div class="container">
+    
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+        <img class="img-rounded" src="images/teach-icon.svg" alt="teaching with graph" width="140" height="140">
+          <h2>To educate the public</h2>
+          <p>About the disadvantages of other voting methods such as the embarrasingly poor Plurality System used in the U.S. and other countries.</p>
+          <p><a class="btn btn-default" href="#wiki" role="button">See our extensive reference &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+        <img class="img-rounded" src="images/protest-icon.svg" alt="protestors" width="140" height="140">
+          <h2>To lobby for adoption</h2>
+          <p>of Range Voting, for every single-winner election anywhere in the world, and abolition of gerrymandering through fair redistricting methods.</p>
+          <p><a class="btn btn-default" href="#" role="button">See Ballot Initiative &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+        <img class="img-rounded" src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTAwIDEwMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGQ9Ik03NC44LDExLjZjLTAuOSwwLTQ4LjcsMC00OS42LDBjLTEsMC0yLjgsMC40LTMuMywxQzIxLjQsMTMuMyw1LjMsMzQuNSw1LjMsMzQuNWg4OS4zYzAsMC0xNi4zLTIxLjQtMTYuNi0yMS45ICAgUzc2LjEsMTEuNiw3NC44LDExLjZ6IE03MS4yLDI2LjJIMjguOGMtMiwwLTMuNS0xLjQtMi42LTMuNmMwLjktMi4yLDIuNi00LjEsNC42LTQuMWgzOC40YzIsMCw0LjEsMS45LDQuOCw0LjIgICBDNzQuNiwyNSw3My4zLDI2LjIsNzEuMiwyNi4yeiIvPjxwYXRoIGQ9Ik01LDQwYzAsMCwwLDQwLDAsNDNjMCwzLDIuMiw1LDUuMyw1YzMuMSwwLDc2LjIsMCw3OS4yLDBzNS41LTIuMiw1LjUtNWMwLTIuNywwLTQzLDAtNDNINXogTTQ4LjQsNzQuMyAgIGMtMS4xLDEuMi0yLjMsMi40LTIuOSwyLjljLTAuMSwwLjEtMC4yLDAuMi0wLjIsMC4ybDAsMGMtMC4xLDAtMC4xLDAtMC4xLDBjLTAuOCwwLTExLjktMTEuNS0xMS45LTEyLjFzNS40LTUuOCw2LjItNS44ICAgYzAuNCwwLDMuMiwyLjgsNS45LDUuN2M2LjItNi41LDE1LjMtMTUuOCwxNS44LTE1LjhjMC44LDAsNS45LDUuMyw1LjksNkM2Ni45LDU2LjEsNTQuNCw2OC40LDQ4LjQsNzQuM3oiLz48L2c+PC9zdmc+" alt="ballot box" width="140" height="140">
+          <h2>To assist in using Range</h2>
+          <p>in elections, for anyone looking to do so, whether it's for public office, student elections, or even a group vote among friends.</p>
+          <p><a class="btn btn-default" href="#app" role="button">Start online contest &raquo;</a>
+          <a class="btn btn-default" href="#app" role="button">Smartphone App &raquo;</a></p>
+        </div>
+      </div>
+    </div>  <!-- /container -->
+</div>
 
       
       
@@ -439,7 +447,7 @@ greater amount than <i>the entire invention of democracy in the first place</i>.
       </footer>
     </div> <!-- /container -->
 
-
+</div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -448,6 +456,9 @@ greater amount than <i>the entire invention of democracy in the first place</i>.
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    
+    <!--Chart.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     
     <script><!-- Enable all tooltips -->
     $(function () {
@@ -463,6 +474,97 @@ greater amount than <i>the entire invention of democracy in the first place</i>.
         });
     })
     
+
+
+var data = {
+    labels: ["Magic 'Best' Winner", "Range", "Approval", "Borda", "Condorcet", "Instant Runoff", "Plurality", "Random Winner"],
+    datasets: [
+        {
+            label: "Strategic Voters",
+            backgroundColor: [
+                'rgba(255, 99, 132, 0)',
+                'rgba(54, 162, 235, 0)',
+                'rgba(255, 206, 86, 0)',
+                'rgba(75, 192, 192, 0)',
+                'rgba(153, 102, 255, 0)',
+                'transparent',
+                'transparent',
+                'transparent',
+                'transparent'
+            ],
+            borderColor: [
+                'rgba(255,99,132,0)',
+                'rgba(54, 162, 235, 0)',
+                'rgba(255, 206, 86, 0)',
+                'rgba(75, 192, 192, 0)',
+                'rgba(153, 102, 255, 0)',
+                'rgba(255, 159, 64, 0)',
+                'transparent',
+                'transparent',
+                'transparent'
+            ],
+            borderWidth: 0,
+            data: [98, 80, 80, 60, 42, 39, 40, 0],
+        }, {
+            label: "Honest Voters",
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderWidth: 10,
+            data: [2, 17, 7, 36, 48, 30, 10, 2],
+        }
+    ]
+};
+
+var options =  {
+    responsive: true,
+    title: {
+        display:true,
+        text: "Bayesian Regret",
+        fontSize: 16
+    },
+    scales: {
+        xAxes: [{
+            stacked: true,
+            display: false
+        }],
+        yAxes: [{
+            stacked: true,
+            position: "right",
+            display: false
+        }]
+    },
+    elements: {
+        rectangle: {
+            borderSkipped: "top"
+        }
+    }
+}
+    
+    
+       
+var myChart = new Chart(document.getElementById("bayesianRegretAnalysis"), {
+    type: 'horizontalBar',
+    data: data,
+    options: options
+});
 </script>
   </body>
 </html>
